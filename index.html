@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no' />
+    <meta charset='utf-8'>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <style></style>
+    <title>Tap_cricket</title>
+    <script src="playcanvas-stable.min.js"></script>
+    <script>
+        ASSET_PREFIX = "";
+        SCRIPT_PREFIX = "";
+        SCENE_PATH = "706050.json";
+        CONTEXT_OPTIONS = {
+            'antialias': true,
+            'alpha': false,
+            'preserveDrawingBuffer': false,
+            'preferWebGl2': true
+        };
+        SCRIPTS = [ 17461271, 17462615, 17361759, 17361757, 17361758, 17452354, 17460384, 17460412, 17460414, 17491137, 17568294, 17568366, 17632386 ];
+        CONFIG_FILENAME = "config.json";
+        INPUT_SETTINGS = {
+            useKeyboard: true,
+            useMouse: true,
+            useGamepads: false,
+            useTouch: true
+        };
+        pc.script.legacy = false;
+    </script>
+</head>
+<body>
+      <script src="https://connect.facebook.net/en_US/fbinstant.6.2.js"></script>
+	  <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '125381082593335',
+      xfbml      : true,
+      version    : 'v9.0'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+    <script src="__start__.js"></script>
+    <script src="__loading__.js"></script>
+    
+        <script type="text/javascript">
+    console.log('I am from Index--------');
+    FBInstant.initializeAsync().then(function () {
+        
+        console.log('May I have lot to do Here');
+        FBInstant.setLoadingProgress(100);
+         FBInstant.startGameAsync().then(function() {
+        console.log('May I have lot to do AGAIN');
+ 
+    
+    });
+     });
+            
+         
+          
+            </script>
+			
+</body>
+</html>
